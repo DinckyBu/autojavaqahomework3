@@ -39,7 +39,7 @@ public class CardApplicationTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+71234567890");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.className("button")).click();
-        String actual = driver.findElement(By.cssSelector("[.order-success]")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText().trim();
         assertEquals("  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actual);
 
     }
@@ -50,7 +50,7 @@ public class CardApplicationTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+71234567890");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.className("button")).click();
-        String actual = driver.findElement(By.cssSelector("[.order-success]")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText().trim();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actual);
 
     }
@@ -60,7 +60,7 @@ public class CardApplicationTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+71234567890");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.className("button")).click();
-        String actual = driver.findElement(By.cssSelector("[.order-success]")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText().trim();
         assertEquals("  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actual);
 
     }
